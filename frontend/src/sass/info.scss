@@ -1,0 +1,89 @@
+@import 'global.scss';
+
+
+.info{
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    background-color: $dark;
+    @include flexbox-direction(center,center);
+    gap: 20px;
+
+    .left{
+        @include flexbox-wrap(center,center);
+        height: 500px;
+        .about{
+            width: 50%;
+            height: 100%;
+            @include flexbox-direction(center,center);
+            gap: 20px;
+            
+            h1{
+                font-family: 'poppins-Bold';
+                color: white;
+                width: 80%;
+                font-size: 2.1rem;
+            }
+
+            h3{
+                font-family: 'poppins-Medium';
+                color: $secondary;
+                width: 80%;
+            }
+
+            p{
+                font-family: 'poppins-Light';
+                color: silver;
+                width: 80%;
+            }
+        }
+        img{
+            object-fit: cover;
+            width: 50%;
+            height: 100%;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+        }
+    }
+
+    .right{
+        width: 100%;
+        height: fit-content;
+        padding: 20px;
+        @include flexbox-wrap(space-around,center);
+        gap: 20px;
+
+        .card{
+            width: 45%;
+            height: fit-content;
+            padding: 30px 20px;
+            // box-shadow: 0px 0px 20px rgba(0,0,0,0.40);
+            // border: 1px solid $secondary;
+            @include flexbox-direction(center,center);
+            gap: 20px;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+
+            b{
+                font-family: 'poppins-Bold';
+                color: $light;
+                font-size: 1.8rem;
+            }
+
+            p{
+                font-family: 'poppins-Light';
+                color: silver;
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,62 @@
+@import 'global.scss';
+
+header {
+    width:100%;
+    height: fit-content;
+    padding: 50px 20px;
+    @include flexbox-direction(center,center);
+    background: $radial;
+    gap: 20px;
+
+    .chant{
+        margin-top: 30px;
+        color: $light;
+        font-family: 'poppins-Bold';
+        font-size: 4rem;
+        width: 100%;
+        @include flexbox-wrap(center,center);
+        gap: 20px;
+
+        .higlight{
+            color: $secondary;
+        }
+
+    }
+
+    h4{
+        width: 50%;
+        font-family: 'poppins-Light';
+        color: gray;
+        text-align: center;
+        margin: 20px 0px;
+    }
+
+    .start{
+        padding: 10px 30px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        font-family: 'poppins-Medium';
+        color: $light;
+        border: 1px solid $secondary;
+        cursor: pointer;
+    }
+
+    .social-media{
+        width: fit-content;
+        padding: 10px 20px;
+        @include flexbox-wrap(center,center);
+        gap: 20px;
+
+        a{
+            img{
+                width: 40px;
+            }
+            cursor: pointer;
+        }
+
+    }
+
+}

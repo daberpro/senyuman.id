@@ -1,0 +1,53 @@
+@import 'global.scss';
+
+.category{
+
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    @include flexbox-wrap(center,center);
+    gap: 20px;
+    background-color: #181920;
+
+    .kind{
+
+        cursor: pointer;
+
+        &:hover{
+            color: $light;
+            border-color: $secondary;
+        }
+
+        &:hover > b{
+            color: $secondary;
+        }
+
+        b{
+            font-family: 'poppins-Bold';
+            font-size: 1rem;
+            color: $light;
+        }
+        border-radius: 10px;
+        padding: 20px;
+        border: 1px solid rgba(255,255,255,0.25);
+        background-color: $dark;
+        font-family: 'poppins-Light';
+        color: silver;
+        font-size: 0.8rem;
+        gap: 10px;
+        @include flexbox-direction(center,center);
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+
+}
+
+@media screen and (max-width: 600px) and (min-width: 300px){
+    .category {
+        .kind{
+            width: 100%;
+        }
+    }
+}

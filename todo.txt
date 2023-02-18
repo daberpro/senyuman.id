@@ -1,0 +1,6 @@
+CREATE CRUD FOR THIS!!
+-> testimonial (F)
+-> services (F)
+-> show case (F)
+-> ui-kit (O)
+-> about us (O)

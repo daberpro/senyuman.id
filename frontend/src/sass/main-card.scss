@@ -1,0 +1,29 @@
+@import 'global.scss';
+
+.main-card{
+    width: 280px;
+    height: 100%;
+    @include flexbox-direction(center,center);
+    background-color: #1F222F;
+    gap: 20px;
+    padding: 20px;
+    
+
+    b{
+        font-family: 'poppins-Bold';
+        color: $light;
+    }
+
+    p{
+        font-family: 'poppins-Light';
+        color: silver;
+        text-align: center;
+        width: 70%;
+        font-size: 12px;
+    }
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}

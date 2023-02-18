@@ -1,0 +1,35 @@
+@import 'global.scss';
+
+main{
+    width: 100%;
+    height: fit-content;
+    background-color: #181920;
+    padding: 40px 0px;
+    @include flexbox-direction(center,center);
+    gap: 20px;
+
+    h1{
+        font-family: 'poppins-Bold';
+        color: $light;
+        text-align: center;
+        margin: 50px 0px 20px 0px;
+    }
+
+    h4{
+        font-family: 'poppins-Light';
+        color: gray;
+        width: 50%;
+        text-align: center;
+    }
+
+    .offering{
+        width: 100%;
+        padding: 20px;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+        gap: 20px;
+        justify-items: center;
+    }
+
+}

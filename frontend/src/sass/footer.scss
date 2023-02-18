@@ -1,0 +1,120 @@
+@import 'global.scss';
+
+footer {
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    background-color: $dark;
+    @include flexbox-direction(center,center);
+    gap: 20px;
+
+    hr{
+        width: 100%;
+        border: 1px solid gray;
+    }
+
+    .menu{
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        gap: 20px;
+        .list{
+            padding: 20px;
+            width: 100%;
+            height: fit-content;
+            @include flexbox-direction(flex-start,center);
+            gap: 10px;
+    
+            & > *{
+                width: 100%;
+            }
+    
+            h3{
+                font-family: 'poppins-Bold';
+                color: $secondary;
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+                position: relative;
+
+                &:before{
+                    content: "";
+                    width: 80%;
+                    height: 2px;
+                    background-color: $secondary;
+                    border-radius: 50px;
+                    -webkit-border-radius: 50px;
+                    -moz-border-radius: 50px;
+                    -ms-border-radius: 50px;
+                    -o-border-radius: 50px;
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                }
+    
+                &:first-child{
+                    margin-top: 20px;
+                }
+    
+                &:not(:first-child){
+                    margin-top: 30px;
+                }
+            }
+    
+            p{
+                font-family: 'poppins-Light';
+                color: silver;
+                font-size: 0.8rem;
+            }
+    
+            li{
+                font-size: 0.8rem;
+                font-family: 'poppins-Medium';
+                color: silver;
+                list-style-image: url('../assets/icon/right-chevron.png');
+            }
+    
+        }
+        
+    }
+
+    .copy{
+        width: 100%;
+        @include flexbox-wrap(space-around,center);
+        padding: 20px;
+
+        .social-media{
+            @include flexbox-wrap(center,center);
+            gap: 10px;
+
+            img{
+                width: 50px;
+            }
+            margin: 20px;
+
+        }
+
+        .text{
+            width: fit-content;
+            @include flexbox-wrap(center,center);
+            gap: 10px;
+
+            & > *{
+                font-family: 'poppins-Light';
+                color: white;
+                font-size: 0.9rem;
+            }
+            margin: 20px;
+        }
+
+        .copyright{
+            margin: 20px;
+            width: fit-content;
+            font-family: 'poppins-Light';
+            color: white;
+            font-weight: 300;
+            font-size: 0.9rem;
+        }
+
+    }
+}

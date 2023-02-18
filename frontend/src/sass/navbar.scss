@@ -1,0 +1,209 @@
+@import 'global.scss';
+
+.navbar {
+    width: 100%;
+    height: fit-content;
+    padding: 20px 0px;
+    background-color: $dark;
+    @include flexbox-wrap(center, center);
+    justify-content: space-around;
+    gap: 20px;
+
+    .logo {
+        cursor: pointer;
+        font-size: 20px;
+        color: $secondary;
+        font-family: 'poppins-Bold';
+        @include flexbox-wrap(center, center);
+    }
+
+    .menu {
+        width: fit-content;
+        height: 100%;
+        @include flexbox-wrap(center, center);
+        gap: 30px;
+
+        li,a {
+            list-style: none;
+            font-family: 'poppins-Regular';
+            color: $light;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+    }
+
+    .action {
+        width: fit-content;
+        padding: 10px 15px;
+        font-family: 'poppins-Bold';
+        color: $light;
+        border: 1px solid $primary;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (min-width: 200px) and (max-width: 850px) {
+
+    main {
+        h4{
+            width: 90%;
+        }
+        .offering{
+            grid-template-columns: repeat(auto-fit,minmax(100%,1fr));
+
+            .main-card{
+                width: 100%;
+            }
+
+        }
+    }
+
+    .navbar {
+        z-index: 9999999999999999;
+        box-shadow: 0px 0px 40px black;
+        width: 90%;
+        margin: auto;
+        padding: 20px 20px;
+        left: 0px;
+        top: 20px;
+        right: 0px;
+        position: fixed;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+
+        .action{
+            display: none;
+        }
+
+        .logo {
+            width: 40%;
+            font-size: calc(13px + 2vw);
+        }
+
+        .menu {
+            width: 50%;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            justify-content: flex-start;
+            padding: 10px 20px;
+            align-items: center;
+
+            li {
+                margin: 0px 5px;
+                width: fit-content;
+            }
+            border-radius: 20px 20px 0px 0px;
+            -webkit-border-radius: 20px 20px 0px 0px;
+            -moz-border-radius: 20px 20px 0px 0px;
+            -ms-border-radius: 20px 20px 0px 0px;
+            -o-border-radius: 20px 20px 0px 0px;
+        }
+
+    }
+
+    header {
+        padding-top: 150px;
+
+        .chant{
+            font-size: 12vw;
+            text-align: center;
+
+            strong{
+                line-height: 1rem;
+            }
+
+        }
+
+        h4{
+            font-size: 4vw !important;
+        }
+
+    }
+
+    .info {
+
+        .left{
+            width: 100%;
+
+            .about,img{
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            height: fit-content;
+
+        }
+
+        .right{
+            width: 100%;
+            padding: 0px;
+
+            .card{
+                width: 100%;
+            }
+
+        }
+    }
+
+    .home-product{
+        .products{
+            grid-template-columns: repeat(auto-fit,minmax(100%,1fr));
+
+            .card{
+                .detail{
+                    div{
+                        p{
+                            width: 100% !important;
+                        }
+                        a{
+                            padding: 20px;
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    footer{
+        padding: 0px;
+
+        .menu {
+            .list{
+                h3,h3:first-child,h3:not(:first-child){
+                    margin: 0px;
+
+                    &:before{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .copy {
+            .copyright{
+                text-align: center;
+            }
+        }
+
+    }
+
+    .testimonials{
+        .cards{
+            padding: 0px !important;
+        }
+    }
+
+}

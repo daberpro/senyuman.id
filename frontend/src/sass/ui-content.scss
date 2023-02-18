@@ -1,0 +1,138 @@
+@import 'global.scss';
+
+.ui-content{
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    background-color: #181920;
+    @include flexbox-direction(center,center);
+    gap: 20px;
+
+    hr{
+        width: 100%;
+        border-color: rgba(0,0,0,0.25);
+        line-height: 1px;
+        margin-bottom: 50px;
+    }
+
+    .header{
+        width: 100%;
+        height: fit-content;
+
+        h1{
+            font-family: 'poppins-Bold';
+            color: $light;
+        }
+
+        p{
+            font-family: 'poppins-Light';
+            color: silver;
+        }
+
+    }
+
+    .ui-main-content{
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit,minmax(200px,2fr));
+
+        .uiCard{
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            background-color: $dark;
+            @include flexbox-direction(center,center);
+        
+            .main{
+                width: 100%;
+                height: fit-content;
+                @include flexbox-direction(center,center);
+                position: relative;                
+                img{
+                    width: 100%;
+                    height:auto;
+                    object-fit: cover;
+                    border-radius: 20px 20px 0px 0px;
+                    -webkit-border-radius: 20px 20px 0px 0px;
+                    -moz-border-radius: 20px 20px 0px 0px;
+                    -ms-border-radius: 20px 20px 0px 0px;
+                    -o-border-radius: 20px 20px 0px 0px;
+}
+
+                b{
+                    width: 100%;
+                    height: 50%;
+                    padding: 20px 0px;
+                    position: absolute;
+                    font-family: 'poppins-Bold';
+                    color: $light;
+                    bottom: 0px;
+                    margin: auto;
+                    @include flexbox-wrap(center,center);
+                    background: linear-gradient(to top, rgba(0,0,0,0.75),rgba(0,0,0,0.001));
+                }
+
+            }
+
+            .ui-info{
+                padding: 20px;
+                border-left: 1px solid rgba(255,255,255,0.25);
+                border-right: 1px solid rgba(255,255,255,0.25);
+                border-bottom: 1px solid rgba(255,255,255,0.25);
+                // border: 1px solid rgba(255,255,255,0.25);
+                width: 100%;
+                height: fit-content;
+                gap: 10px;
+                @include flexbox-wrap(flex-start,center);
+            
+                .left{
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 100%;
+                        object-fit: cover;
+                        -webkit-border-radius: 100%;
+                        -moz-border-radius: 100%;
+                        -ms-border-radius: 100%;
+                        -o-border-radius: 100%;
+}
+                    width: fit-content;
+                    @include flexbox-wrap(center,center);
+                    height:fit-content;
+                }
+
+                .right{
+                    width: 50%;
+                    height:fit-content;
+                    @include flexbox-direction(center,flex-start);
+                    
+                    b{
+                        font-size: 0.8rem;
+                        color: $light;
+                        font-family: 'poppins-Bold';
+                    }
+                    p{
+                        font-size: 0.7rem;
+                        color: silver;
+                        font-family: 'poppins-Light';
+                    }
+                }
+                border-radius: 0px 0px 20px 20px;
+                -webkit-border-radius: 0px 0px 20px 20px;
+                -moz-border-radius: 0px 0px 20px 20px;
+                -ms-border-radius: 0px 0px 20px 20px;
+                -o-border-radius: 0px 0px 20px 20px;
+}
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+}
+
+    }
+
+}
+

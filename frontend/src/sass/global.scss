@@ -1,0 +1,110 @@
+$primary : #599BFF;
+$secondary: #59FFE1;
+$light: #FFFFFF;
+$dark: #1F222F;
+$radial: radial-gradient(50% 50% at 50% 50%, #20253F 0%, #181920 100%);
+
+@font-face {
+    font-family: 'poppins-Black';
+    src: url('../assets/Poppins-Black.ttf');
+}
+
+@font-face {
+    font-family: 'poppins-BlackItalic';
+    src: url('../assets/Poppins-BlackItalic.ttf');
+}
+
+@font-face {
+    font-family: 'poppins-Bold';
+    src: url('../assets/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'poppins-BoldItalic';
+    src: url('../assets/Poppins-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'poppins-ExtraBold';
+    src: url('../assets/Poppins-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'poppins-ExtraBoldItalic';
+    src: url('../assets/Poppins-ExtraBoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'poppins-ExtraLight';
+    src: url('../assets/Poppins-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'poppins-ExtraLightItalic';
+    src: url('../assets/Poppins-ExtraLightItalic.ttf');
+}
+
+@font-face {
+    font-family: 'poppins-Italic';
+    src: url('../assets/Poppins-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'poppins-Light';
+    src: url('../assets/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: 'poppins-LightItalic';
+    src: url('../assets/Poppins-LightItalic.ttf');
+}
+
+@font-face {
+    font-family: 'poppins-Medium';
+    src: url('../assets/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'poppins-MediumItalic';
+    src: url('../assets/Poppins-MedumItalic.ttf');
+}
+
+@font-face {
+    font-family: 'poppins-Regular';
+    src: url('../assets/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'poppins-SemiBold';
+    src: url('../assets/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'poppins-SemiBoldItalic';
+    src: url('../assets/Poppins-SemiBoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'poppins-Thin';
+    src: url('../assets/Poppins-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'poppins-ThinItalic';
+    src: url('../assets/Poppins-ThinItalic.ttf');
+}
+
+@mixin flexbox-wrap($jt,$ai) {
+    display:flex;
+    justify-content: $jt;
+    align-items: $ai;
+    flex-wrap: wrap;
+}
+
+@mixin flexbox-direction($jt,$ai) {
+    display:flex;
+    justify-content: $jt;
+    align-items: $ai;
+    flex-direction: column;
+}
+

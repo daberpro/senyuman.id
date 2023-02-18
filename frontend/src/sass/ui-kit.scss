@@ -1,0 +1,65 @@
+@import 'global.scss';
+
+.catalog {
+    .header{
+        width: 100%;
+        height: fit-content;
+        background: $radial;
+        padding: 20px;
+        padding-top: calc(130px + 5vw);
+
+        @include flexbox-direction(center,center);
+
+        h1{
+            font-family: 'poppins-Bold';
+            color: $light;
+            text-align: center;
+            font-size: calc(2rem + 2vw);
+
+            strong{
+                color: $secondary;
+                margin: 0px 20px; 
+            }
+
+        }
+
+        p{
+            font-family: 'poppins-Light';
+            color: silver;
+            margin: 20px;
+            width: calc(200px + 8vw);
+            text-align: center;
+        }
+
+    }
+}
+
+.content-nav{
+    width:100%;
+    padding: 20px;
+    background-color: #181920;
+    @include flexbox-wrap(center,center);
+    gap: 20px;
+
+    button{
+
+        &:hover,&:active{
+            border: 1px solid $secondary;
+            color: $light;
+        }
+
+        background-color: $dark;
+        color: silver;
+        font-family: 'poppins-Light';
+        padding: 10px 15px;
+        border-radius: 10px;
+        cursor: pointer;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        border: 1px solid rgba(255,255,255,0.25);
+
+}
+
+}
